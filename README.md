@@ -1,2 +1,2 @@
 # jsp-servlet-examples
-This repo contains Jsp-servlet-examples
+This repository contains Jsp-servlet-examples to illustrate the concepts
