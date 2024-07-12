@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
+  <display-name>ConfigContextApp</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+      <servlet-name>FirstServlet</servlet-name>
+      <servlet-class>in.demo.servlet.FirstServlet</servlet-class>
+      
+      <init-param>
+          <param-name>msg</param-name>
+          <param-value>Welcome to first servlet</param-value>
+      </init-param>
+      
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>FirstServlet</servlet-name>
+     <url-pattern>/first</url-pattern> 
+  </servlet-mapping>
+  <servlet>
+      <servlet-name>SecondServlet</servlet-name>
+      <servlet-class>in.demo.servlet.SecondServlet</servlet-class>
+      
+      <init-param>
+          <param-name>msg2</param-name>
+          <param-value>Welcome to second servlet</param-value>
+      </init-param>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>SecondServlet</servlet-name>
+     <url-pattern>/second</url-pattern>
+  </servlet-mapping>
+</web-app>
